@@ -1,0 +1,22 @@
+{
+  "name": "jurrasicclass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomBrockington/jurrasicClass.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TomBrockington/jurrasicClass/issues"
+  },
+  "homepage": "https://github.com/TomBrockington/jurrasicClass#readme",
+  "devDependencies": {
+    "jasmine": "^4.2.1"
+  }
+}
