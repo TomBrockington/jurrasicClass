@@ -13,12 +13,11 @@ class Game {
         this.characters.push(character)
         console.log('char = ', character)
 
-        return Character
+        return character
     }
     
     findCharacter(searchName) {
         for (let i = 0; i < this.characters.length; i++) {
-            /// which way to i look character or characters
             if (this.characters[i].characterName === searchName) {
                 return this.characters[i]
             } else {
