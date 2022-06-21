@@ -16,7 +16,7 @@ describe('Jurrasic World ', () => {
     game = new Game()
   })
 
-  it('create a new character', () => {
+  it('1. create a new character', () => {
     // set up
     const expectedResult = {
       characterName: 'Dr Alan Grant',
@@ -31,7 +31,9 @@ describe('Jurrasic World ', () => {
     expect(result).toEqual(expectedResult)
   })
 
-  it('find character by name', () => {
+  // Maybe add an invalid name checker
+
+  it('2. find character by name', () => {
     // set up
     const expectedResult = {
         characterName: 'Dr Alan Grant',
@@ -48,7 +50,17 @@ describe('Jurrasic World ', () => {
     expect(result).toEqual(expectedResult)
   })
 
-  it('show all characters', () => {
+  it('2.2 throw error when name not found', () => {
+    // set up
+    const expectedResult = 'Player Not Found'
+    // execute
+    game.createCharacter('Dr Alan Grant', 42)
+    const result = game.findCharacter('Lex Murphey')
+    // verify
+    expect(result).toEqual(expectedResult)
+  })
+
+  it('3. show all characters', () => {
     // set up
     const expectedResult = [
       {
@@ -74,7 +86,7 @@ describe('Jurrasic World ', () => {
     expect(result).toEqual(expectedResult)
   })
 
-  it('delete character by name', () => {
+  it('4. delete character by name', () => {
     // set up 
     const expectedResult = 'Player deleted'
     // execute
@@ -85,12 +97,12 @@ describe('Jurrasic World ', () => {
     // expect(game.characters).toEqual([])
   })
 
-  it('delete returns error when name not found', () => {
+  it('4.2 delete returns error when name not found', () => {
     // set up 
     const expectedResult = 'Player Not Found'
     // execute
     game.createCharacter('Dr Alan Grant', 42)
-    const result = game.deleteCharacter('Dr Grant')
+    const result = game.deleteCharacter('Lex Murphey')
     // verify
     expect(result).toEqual(expectedResult)
     // expect(game.characters).toEqual([])

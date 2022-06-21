@@ -1,0 +1,30 @@
+{
+    "dinosaurs": [
+        {
+            "type": "T-Rex",
+            "speed": 5,
+            "attackDamage": 10
+        },
+        {
+            "type": "Borntesaurus",
+            "speed": 2,
+            "attackDamage": 4
+        },
+        {
+            "type": "Stegasaurus",
+            "speed": 6,
+            "attackDamage": 8
+        },
+        {
+            "type": "Compi",
+            "speed": 7,
+            "attackDamage": 1
+        },
+        {
+            "type": "Velocorapter",
+            "speed": 9,
+            "attackDamage": 8
+        }
+
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "weapons": [
+        {
+            "weaponName": "ShotGun",
+            "weaponDamage": "5"
+        }
+    ]
+}

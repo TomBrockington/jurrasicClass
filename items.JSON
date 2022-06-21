@@ -1,0 +1,13 @@
+{
+    "items": [
+        {
+            "name": "Small Health Pack",
+            "value": "Health + 10"
+        },
+        {
+            "name": "Dino Pee",
+            "Value": "Evade + 15"
+        }
+
+    ]
+}
