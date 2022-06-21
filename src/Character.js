@@ -11,12 +11,12 @@ class Character {
         this.weapons = []
     }
 
-    findItem() {
-        // need a find matching item in invintory for loop
-        itemFound = Math.random(JSON) //random item
-        this.invintory.push(itemFound)
-        return this.invintory // {name: quantity:}
-    }
+    // findItem() {
+    //     // need a find matching item in invintory for loop
+    //     itemFound = Math.random(JSON) //random item
+    //     this.invintory.push(itemFound)
+    //     return this.invintory // {name: quantity:}
+    // }
 
 }
 

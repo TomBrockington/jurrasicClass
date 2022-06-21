@@ -5,6 +5,8 @@ class Game {
         this.characters = []
     }
 
+    // ? Could all these functions be moved to another class called CharacterFunctions and this class just has one calling function. i.e callfunction.createCharacter()
+
     createCharacter(characterName, characterAge) {
         const character = new Character(characterName, characterAge)
         console.log('char = ', this.characters)
