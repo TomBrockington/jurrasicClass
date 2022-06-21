@@ -19,6 +19,8 @@ class Game {
             /// which way to i look character or characters
             if (this.characters[i].characterName === searchName) {
                 return this.characters[i]
+            } else {
+                return 'Player Not Found'
             }
         }
     }
@@ -29,7 +31,7 @@ class Game {
 
     deleteCharacter(searchName) {
         for (let i = 0; i < this.characters.length; i++) {
-            if (this.character[i].characterName === searchName) {
+            if (this.characters[i].characterName === searchName) {
                 this.characters.splice(this.characters[i], 1)
                 return 'Player deleted'
             } else {
